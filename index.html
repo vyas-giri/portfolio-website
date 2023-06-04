@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Yeon+Sung&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+        @font-face {
+            font-family: cyberpunk;
+            src: url(terminal-grotesque_open.otf);
+        }
+        h1{
+            font-family: 'cyberpunk'
+        }
+        p{
+            font-family: 'cyberpunk';
+        }
+        body {
+            background-image: url("images/b2.png");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+        }
+        #vyas{
+            font-family: 'cyberpunk';
+        }
+        li{
+            font-family: 'cyberpunk';
+        }
+ 
+    </style>
+</head>
+<body>
+    <div class="main flex items-center space-x-16">
+        <div class="navbar h-screen bg-slate-900 flex space-y-9 flex-col items-center border-r-2 border-blue-950 p-2">
+            <div class="flex flex-col items-center space-y-8 mb-60">
+                <a href=""><img class="rounded-full h-20 w-28 object-cover" src="images/proman.jpeg" alt="proman"></a>
+                <a href="https://i.redd.it/5vccgghvcpt21.png" target="_blank" class="text-blue-800" id="vyas">Vyas Giri</a>
+            </div>
+            <a class="hover:bg-white rounded-lg" href="https://github.com/vyas-giri" target="_blank">
+                <img class="h-10" onmouseout="this.src='icons/github-mark-white.png';" onmouseover="this.src='icons/github-mark.png';" alt="github">
+            </a>
+            <a class="hover:bg-white rounded-lg p-1" href="https://twitter.com/VyasGiri3" target="_blank">
+                <img class="h-8" onmouseout="this.src='icons/twitter_black.png';" onmouseover="this.src='icons/twitter.png';" alt="twitter">
+            </a>
+            <a class="hover:bg-white rounded-lg" href="https://www.linkedin.com/in/vyas-giri-ba1616225/" target="_blank"><img class="h-8" onmouseout="this.src='icons/In-White-48.png';" onmouseover="this.src='icons/In-Blue-48.png';" alt="linkedin"></a>
+            <a class="hover:bg-white rounded-lg p-1" href="https://www.instagram.com/vyas_kun/" target="_blank"><img class="h-8" onmouseout="this.src='icons/Instagram_Glyph_Black.png';" onmouseover="this.src='icons/Instagram_Glyph_Gradient.png';" alt="instagram"></a>
+        </div>
+        <div class="left space-y-5 p-5">
+            <h1 class="font-bold text-5xl text-cyan-500 flex items-center">Hello there <img class="h-24 rounded-full p-4" src="gifs/kakashi-kakashi-hatake.gif" alt="kakashihello"></h1>
+            <p class="font-bold text-emerald-200 text-2xl">Hi, my name is Vyas Giri. I currently am a freshman at <a class="underline underline-offset-4" href="https://iitbhu.ac.in/">IIT BHU</a>, Varanasi. I am enrolled in a integrated dual degree course here. I love to learn about computers and technology.</p>
+            <ul>
+                <li class="text-2xl font-bold text-emerald-200 flex items-center justify-center">I am quite experienced in <img class="h-16 p-4 mt-2" src="icons/python-logo-only.png" alt="python"> and have created several projects using it.</li>
+                <li class="text-2xl font-bold text-emerald-200 flex items-center justify-center">I also know the basics of <img class="h-16 p-4" src="icons/c.svg" alt="C">as it was in my curriculum.</li>
+                <li class="text-2xl font-bold text-emerald-200 flex items-center justify-center">I am currently learning the MERN stack. I have created several projects in web dev too and have also created clones of Facebook and Microsoft websites. After this I plan to learn WEB3.</li>
+            </ul>
+            <p class="text-2xl flex items-center text-emerald-200"><img class="h-12 p-2" src="icons/email.png" alt="email"> vyasgiri@duck.com</p>
+        </div>
+        <div class="right mb-96 -mt-44"><a href="https://anilist.co/user/ProMan25/" target="_blank">
+            <img class="rounded-full w-40 p-5" src="gifs/persona5-lain.gif" alt="gif"></a><p class="opacity-30">I love to watch anime too</p>
+        </div>
+    </div>
+</body>
+</html>
