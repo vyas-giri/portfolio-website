@@ -14,10 +14,10 @@
             font-family: cyberpunk;
             src: url(fonts/terminal-grotesque_open.otf);
         }
-        h1{
+        #heading{
             font-family: 'cyberpunk'
         }
-        p{
+        .para{
             font-family: 'cyberpunk';
         }
         body {
@@ -29,7 +29,10 @@
         #vyas{
             font-family: 'cyberpunk';
         }
-        li{
+        .lil{
+            font-family: 'cyberpunk';
+        }
+        #font_button{
             font-family: 'cyberpunk';
         }
  
@@ -52,18 +55,20 @@
             <a class="hover:bg-white rounded-lg p-1" href="https://www.instagram.com/vyas_kun/" target="_blank"><img class="h-8" onmouseout="this.src='icons/Instagram_Glyph_Black.png';" onmouseover="this.src='icons/Instagram_Glyph_Gradient.png';" alt="instagram"></a>
         </div>
         <div class="left space-y-5 p-5">
-            <h1 class="font-bold text-5xl text-cyan-500 flex items-center">Hello there <img class="h-24 rounded-full p-4" src="gifs/kakashi-kakashi-hatake.gif" alt="kakashihello"></h1>
-            <p class="font-bold text-emerald-200 text-2xl">Hi, my name is Vyas Giri. I currently am a freshman at <a class="underline underline-offset-4" href="https://iitbhu.ac.in/">IIT BHU</a>, Varanasi. I am enrolled in a integrated dual degree course here. I love to learn about computers and technology.</p>
+            <h1 class="font-bold text-5xl text-cyan-500 flex items-center" id="heading">Hello there <img class="h-24 rounded-full p-4" src="gifs/kakashi-kakashi-hatake.gif" alt="kakashihello"></h1>
+            <p class="para font-bold text-emerald-200 text-2xl">Hi, my name is Vyas Giri. I currently am a freshman at <a class="underline underline-offset-4" href="https://iitbhu.ac.in/">IIT BHU</a>, Varanasi. I am enrolled in a integrated dual degree course here. I love to learn about computers and technology.</p>
             <ul>
-                <li class="text-2xl font-bold text-emerald-200 flex items-center justify-center">I am quite experienced in <img class="h-16 p-4 mt-2" src="icons/python-logo-only.png" alt="python"> and have created several projects using it.</li>
-                <li class="text-2xl font-bold text-emerald-200 flex items-center justify-center">I also know the basics of <img class="h-16 p-4" src="icons/c.svg" alt="C">as it was in my curriculum.</li>
-                <li class="text-2xl font-bold text-emerald-200 flex items-center justify-center">I am currently learning the MERN stack. I have created several projects in web dev too and have also created clones of Facebook and Microsoft websites. After this I plan to learn WEB3.</li>
+                <li class="text-2xl font-bold text-emerald-200 flex items-center justify-center lil" id="l1">I am quite experienced in <img class="h-16 p-4 mt-2" src="icons/python-logo-only.png" alt="python"> and have created several projects using it.</li>
+                <li class="text-2xl font-bold text-emerald-200 flex items-center justify-center lil" id="l2">I also know the basics of <img class="h-16 p-4" src="icons/c.svg" alt="C">as it was in my curriculum.</li>
+                <li class="text-2xl font-bold text-emerald-200 flex items-center justify-center lil" id="l3">I am currently learning the MERN stack. I have created several projects in web dev too and have also created clones of Facebook and Microsoft websites. After this I plan to learn WEB3.</li>
             </ul>
-            <p class="text-2xl flex items-center text-emerald-200"><img class="h-12 p-2" src="icons/email.png" alt="email"> vyasgiri@duck.com</p>
+            <p class="para text-2xl flex items-center text-emerald-200"><img class="h-12 p-2" src="icons/email.png" alt="email"> vyasgiri@duck.com</p>
         </div>
-        <div class="right mb-96 -mt-44"><a href="https://anilist.co/user/ProMan25/" target="_blank">
-            <img class="rounded-full w-40 p-5" src="gifs/persona5-lain.gif" alt="gif"></a><p class="opacity-30">I love to watch anime too</p>
+        <div class="right -mt-16"><a href="https://anilist.co/user/ProMan25/" target="_blank">
+            <img class="rounded-full w-40 p-5 mt-10" src="gifs/persona5-lain.gif" alt="gif"></a><p class="para opacity-30 mb-60">I love to watch anime too</p>
+            <button class="border-2 rounded-xl text-white border-black mt-64 mr-3 hover:text-emerald-200 px-1" id="font_button" onclick="font_change()">Click to change font</button>
         </div>
     </div>
 </body>
+<script src="index.js"></script>
 </html>
